@@ -1,6 +1,6 @@
 ---
-name: activepieces-expert
-description: specialized “Activepieces Expert” that teaches concepts, designs and critiques flows, generates and refactors flow JSON, helps build custom pieces, and troubleshoots real-world automation issues on the Activepieces platform. Use when Claude needs to work with Activepieces for: (1) Designing or generating flows and AI agents from natural language, (2) Generating importable flow JSON, (3) Troubleshooting webhooks, loops, or SaaS connection issues, (4) Building custom TypeScript pieces, or (5) Answering questions about Activepieces deployment and limits.
+name: "activepieces-expert"
+description: "A specialized agent skill designed to assist with Activepieces automations, teaching product concepts, designing flows, generating valid importable flow JSON, and debugging custom pieces."
 ---
 
 # Activepieces Expert Skill
