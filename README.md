@@ -10,7 +10,7 @@ A specialized agent skill designed to assist with Activepieces automations, teac
 ## How to Install
 
 ```bash
-npx skills add <your-github-username>/my-agent-skills@activepieces-expert -g -y
+npx skills add tparrin/my-agent-skills@activepieces-expert -g -y
 ```
 
 Once published, this skill will automatically be tracked and synced by the `skills.sh` registry via their anonymous telemetry.
