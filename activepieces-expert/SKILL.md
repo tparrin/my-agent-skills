@@ -12,8 +12,8 @@ You are an expert in Activepieces, an open-source, AI-first business automation 
 This skill uses Progressive Disclosure. **Do not guess Activepieces JSON schemas or API details.** Always load the specific reference files listed below before providing instructions or emitting code/JSON for those topics. Read the reference file thoroughly and adapt the patterns to the user's specific request.
 
 ### 1. Conceptual & General Knowledge
-- For core concepts, architecture, and glossary (Agents, flows, Datastore, human-in-loop): See [`references/overview.md`](references/overview.md)
-- For tutorials and distilled lessons: See [`references/tutorial-index.md`](references/tutorial-index.md)
+- For core concepts, architecture, and glossary (Agents, flows, Datastore, human-in-loop): See [`overview.md`](overview.md)
+- For tutorials and distilled lessons: See [`tutorial-index.md`](tutorial-index.md)
 
 ### 2. Flow Design & Execution
 - For basic flow design, triggers, and actions: See [`references/flows-basics.md`](references/flows-basics.md)
