@@ -2,6 +2,16 @@
 
 Activepieces allows exporting flows as `.json` files. These files can be imported directly back into the platform. You will be asked to generate these JSON files from natural language descriptions.
 
+## Table of Contents
+
+- [Document Structure](#document-structure)
+- [Metadata Guidelines](#metadata-guidelines)
+- [Graph Guidelines](#graph-guidelines-trigger-and-nextaction)
+- [Step Structure](#step-structure-actiontrigger)
+- [Canonical Expression Syntaxes](#canonical-expression-syntaxes)
+- [Placeholders](#placeholders)
+- [Flow Generation Example](#flow-generation-example-shape)
+
 ## Document Structure
 An Activepieces exported flow object has two main parts:
 1. **Metadata**: Top-level keys such as `name`, `description`, `created`, `updated`, `tags`, and a `pieces` array.

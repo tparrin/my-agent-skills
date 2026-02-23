@@ -62,61 +62,67 @@ The skill includes comprehensive reference documentation covering:
 - **Troubleshooting** - Common problems and solutions
 - **Tutorial Index** - Structured learning paths and distilled lessons
 
----
+#### 📜 Version History
 
-### Triplo AI Expert
+**v1.0.0 (February 2026)**
+- Initial release of Activepieces Expert skill
+- Comprehensive reference documentation
+- Progressive disclosure architecture
+- Support for flow design, JSON generation, and custom pieces
+- Removed Triplo AI references (February 23, 2026)
 
-A comprehensive agent skill for Triplo AI guidance, providing expert-level support for installation, SmartPrompts, automations, model selection, and troubleshooting.
+#### 💡 Real-World Use Cases
 
-**Version:** 1.0.0  
-**Author:** tparrin  
-**Tags:** triplo-ai, automation, ai-assistant, productivity
+**1. Automated Lead Qualification**
+- Trigger: New form submission from Typeform
+- Action: Enrich lead data via Clearbit API
+- Action: Score lead using OpenAI
+- Action: Route to Salesforce or Slack based on score
 
-#### Features
+**2. Social Media Content Pipeline**
+- Trigger: Schedule (daily at 9 AM)
+- Action: Fetch trending topics from RSS feeds
+- Action: Generate social posts using OpenAI
+- Action: Human approval via Slack
+- Action: Post to Twitter/LinkedIn upon approval
 
-- 🚀 **Installation & Setup** - Step-by-step guidance for Windows, macOS, iOS, and Android
-- 🎯 **SmartPrompts** - Master built-in and custom prompt templates
-- 🔗 **Automations & Integrations** - Webhooks, API calls, and third-party tool connections
-- 🤖 **Model Selection** - Expert guidance on OpenRouter and local models
-- 🔧 **Troubleshooting** - Comprehensive problem-solving playbooks
-- 📚 **Learning Paths** - Structured tracks from beginner to expert
-
-#### Installation
-
-```bash
-npx skills add tparrin/my-agent-skills@triplo-ai-expert -g -y
-```
-
-#### Usage
-
-After installation, invoke the skill:
-
-```bash
-@triplo-ai-expert
-```
-
-**Example queries:**
-- "How do I install Triplo on Windows?"
-- "Help me create a custom SmartPrompt for code review"
-- "What's the best model for creative writing?"
-- "How do I set up webhooks for Triplo?"
-
-#### Documentation
-
-For detailed documentation and usage examples, visit:  
-https://skills.sh/tparrin/my-agent-skills/triplo-ai-expert
+**3. Customer Support Automation**
+- Trigger: New support ticket from Zendesk
+- Action: Categorize using AI
+- Action: Check knowledge base for answers
+- Action: Draft response
+- Action: Send to human for review
 
 ---
 
 ## 🛠️ Contributing
 
-Contributions are welcome! To add a new skill:
+We welcome contributions to improve the Activepieces Expert skill!
+
+### How to Contribute
+
+1. **Report Issues**: Found a bug or inaccuracy? Open an issue on GitHub
+2. **Suggest Improvements**: Have ideas for new reference topics? Let us know
+3. **Submit PRs**: Fix typos, add examples, or improve documentation
+
+### Contribution Guidelines
+
+- Follow existing documentation style and formatting
+- Test any changes against actual Activepieces instances
+- Update version number and changelog for significant changes
+- Ensure all markdown links are valid
+- Keep SKILL.md concise (<500 lines) and use progressive disclosure
+- Place auxiliary documentation (README.md, CHANGELOG.md) in repository, not skill package
+
+### Adding a New Skill
+
+To add a new skill to this repository:
 
 1. Follow the [skills.sh](https://skills.sh/) standard format
-2. Create a new directory in `skills/`
-3. Include a `SKILL.md` file with proper YAML frontmatter
-4. Add comprehensive reference documentation
-5. Update this README with the new skill
+2. Create a new directory in the repository
+3. Include a `SKILL.md` file with proper YAML frontmatter (name and description only)
+4. Add comprehensive reference documentation in `references/` directory
+5. Update this README with the new skill information
 
 ## 📄 License
 
@@ -127,15 +133,13 @@ This repository is licensed under the MIT License - see the [LICENSE](LICENSE) f
 - **Skills.sh:** https://skills.sh/
 - **GitHub Repository:** https://github.com/tparrin/my-agent-skills
 - **Activepieces:** https://www.activepieces.com/
-- **Triplo AI:** https://triplo.ai/
 
 ## 📞 Support
 
 For issues, questions, or suggestions:
 - Open an issue on GitHub
-- Visit the Triplo AI documentation: https://documentation.triplo.ai/
 
 ---
 
-**Last Updated:** February 2026  
-**Total Skills:** 2
+**Last Updated:** February 23, 2026  
+**Total Skills:** 1
