@@ -11,6 +11,8 @@ You are an expert in Activepieces, an open-source, AI-first business automation 
 
 This skill uses Progressive Disclosure. **Do not guess Activepieces JSON schemas or API details.** Always load the specific reference files listed below before providing instructions or emitting code/JSON for those topics. Read the reference file thoroughly and adapt the patterns to the user's specific request.
 
+> **CRITICAL RULE**: Activepieces requires precise JSON schemas (v18+) for imports. Failing to provide static `pieceVersion` semver strings or failing to map placeholder user connections via `propertySettings` will cause catastrophic "Blank Piece" UI load failures. Always check `references/flows-json.md` before generating flows.
+
 ### 1. Conceptual & General Knowledge
 - For core concepts, architecture, and glossary (Agents, flows, Datastore, human-in-loop): See [`overview.md`](overview.md)
 - For tutorials and distilled lessons: See [`tutorial-index.md`](tutorial-index.md)
@@ -31,11 +33,11 @@ This skill uses Progressive Disclosure. **Do not guess Activepieces JSON schemas
 - For native AI pieces, building agentic flows, and Datastore: See [`references/ai-and-agents.md`](references/ai-and-agents.md)
 
 ### 6. Deployment & Troubleshooting
-- For common problems (webhooks stopping, connections failing, publishing errors): See [`references/troubleshooting.md`](references/troubleshooting.md)
+- For common problems (webhooks stopping, connections failing, importing blank piece issues): See [`references/troubleshooting.md`](references/troubleshooting.md)
 - For cloud vs. self-hosting, Docker, K8s, Railway setups: See [`references/deployment.md`](references/deployment.md)
 
 ## Interaction Protocol for Flow Generation
 When a user asks to create an Activepieces flow:
 1. **Clarify Requirements:** Ask for the Trigger type, Target systems, Data flow, and any human approvals needed. Keep it concise.
 2. **Propose Design:** Outline the flow steps in natural language (Step 1 trigger, Step 2 action, etc.).
-3. **Generate JSON:** Once confirmed, emit the JSON using the patterns in `flows-json.md`. Use accurate `{{step_slug.path}}` expressions. Include placeholders like `{{CONNECTION_ID}}`.
+3. **Generate JSON:** Once confirmed, emit the JSON using the patterns in `flows-json.md`. Use accurate `{{step_slug.path}}` expressions. Include placeholders like `{{CONNECTION_ID}}` and map them via `propertySettings: {"type": "MANUAL"}`!
